@@ -223,7 +223,7 @@ _Bryant Thomas Karras, Washington State Department of Health_
 
 _Emily Kosten, MIT Lincoln Laboratory_
 
-_Randy Mardsen, Apple_
+_Randy Marsden, Apple_
 
 _Joanna Masel, University of Arizona and WeHealth_
 
@@ -238,6 +238,8 @@ _Ravi Palanki, Google_
 _Mathias Payer, École Polytechnique Fédérale de Lausanne_
 
 _Rajesh Pillai, University of Alabama at Birmingham _
+
+_Bill Pugh, University of Maryland_
 
 _Ramesh Raskar, MIT Media Lab and PathCheck Foundation_
 
