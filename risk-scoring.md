@@ -207,7 +207,7 @@ The [COVID Tuner risk score configuration tool](https://risk-score-tuner.appspot
 
 # Contributors
 
-We would like to recognize all participants in the Risk Score Symposium Invitational for their contributions (listed alphabetically).
+We would like to recognize all participants in the Risk Score Symposium Invitational for their contributions (listed alphabetically):
 
 _Justus Benzler, Robert Koch Institut_
 
