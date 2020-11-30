@@ -237,7 +237,7 @@ _Ravi Palanki, Google_
 
 _Mathias Payer, École Polytechnique Fédérale de Lausanne_
 
-_Rajesh Pillai, University of Alabama at Birmingham _
+_Rajesh Pillai, University of Alabama at Birmingham_
 
 _Bill Pugh, University of Maryland_
 
