@@ -1,17 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 2; ALERTS: 3.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # Configuring Exposure Notification Risk Scores
 
 
@@ -33,15 +19,10 @@ This guidance should be viewed as a starting point; each public health authority
 
 The risk score estimates, in minutes, the degree of relevant exposure to someone with a COVID-19 diagnosis. It is calculated by multiplying two[^1] weighted terms together: (1) duration at Bluetooth attenuation and (2) infectiousness based on days since symptom onset.  Further documentation on the structure of the risk score is available from [Apple](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration) and [Google](https://developers.google.com/android/exposure-notifications/meaningful-exposures) technical specification documents.
 
+![Risk score overview](/img/risk-score-overview.png "Risk scores consist of attenuation, infectiousness weight, and (optionally) report type")
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
-_Image source: [https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration) _
+_Image source: [https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration)_
 
 
 # Configuring Bluetooth attenuations 
@@ -194,22 +175,12 @@ Based on available data, the clinical/epidemiology working group agreed on two p
 
 ## Narrower-net consensus configuration
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
+![Narrower net](/img/narrower-net.png)
 
 
 ## Wider-net consensus configuration
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
+![Wider net](/img/wider-net.png)
 
 
 # Choosing notification thresholds
