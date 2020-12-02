@@ -245,6 +245,8 @@ _Ramesh Raskar, MIT Media Lab and PathCheck Foundation_
 
 _Ronald Rivest, MIT_
 
+_Tim Robb, Nevada Division of Public and Behavioral Health_
+
 _Kathryn Rough, Google Health_
 
 _Jenny Wanger, Linux Foundation Public Health_
