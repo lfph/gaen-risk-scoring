@@ -249,6 +249,8 @@ _Tim Robb, Nevada Division of Public and Behavioral Health_
 
 _Kathryn Rough, Google Health_
 
+_Ginger Stringer, Colorado Department of Public Health and Environment_
+
 _Jenny Wanger, Linux Foundation Public Health_
 
 _Sam Zimmerman, PathCheck Foundation_
