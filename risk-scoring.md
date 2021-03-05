@@ -148,7 +148,7 @@ Based on available data, the clinical/epidemiology working group agreed on two p
    </td>
   </tr>
   <tr>
-   <td>Standard weight
+   <td>Standard weight [^2]
    </td>
    <td>30%
    </td>
@@ -156,7 +156,7 @@ Based on available data, the clinical/epidemiology working group agreed on two p
    </td>
   </tr>
   <tr>
-   <td>High weight
+   <td>High weight [^2]
    </td>
    <td>100%
    </td>
@@ -187,7 +187,7 @@ Based on available data, the clinical/epidemiology working group agreed on two p
 
 The weights for the configurations above assume health authorities will prefer to use a threshold of 15 minutes (for ease of communication and consistency in messaging).  While this parameter can also be adjusted, the group did not evaluate the impact of changing it.  
 
-The symposium contributors considered messaging associated with notifications to be out of scope in composing this recommendation. Messaging should be crafted by the health authority to be situationally appropriate.  Health authorities may also consider using multiple thresholds to send more targeted text/instructions based on the risk of the encounter.
+The symposium contributors considered messaging associated with notifications to be out of scope in composing this recommendation. Messaging should be crafted by the health authority to be situationally appropriate.  Health authorities may also consider using multiple thresholds to send more targeted text/instructions based on the risk of the encounter. 
 
 
 # Further information and resources
@@ -202,7 +202,7 @@ Details about the GAEN API and protocol description are at: [https://www.google.
 
 The DP3T white papers for the underlying exposure notification protocol are available at [https://github.com/DP-3T/documents/](https://github.com/DP-3T/documents/) 
 
-The [COVID Tuner risk score configuration tool](https://risk-score-tuner.appspot.com/) is freely available to health authorities.  Please contact Google developer relations for login information. 
+The [COVID Tuner risk score configuration tool](https://risk-score-tuner.appspot.com/) is freely available to health authorities.  Please contact Google developer relations for login information. [^3]
 
 
 # Contributors
@@ -218,6 +218,8 @@ _Michael Flowers, New Jersey Office of Innovation_
 _Sameer Halai, WeHealth_
 
 _Bronwyn Harris, Apple_
+
+_Michael Judd, US Centers for Disease Control and Prevention[^4]_
 
 _Bryant Thomas Karras, Washington State Department of Health_
 
@@ -264,3 +266,9 @@ _Marc Zissman, MIT Lincoln Laboratory_
 
 [^1]:
      A third weighted term, the exposure report type, is also available but was not discussed during the symposium. Based on current best practices, we assumed only confirmed positive tests would be used.
+[^2]:
+     "Standard" and "high" categories refer to discrete categories of transmission risk that public health authorities can configure to differentiate encounters by the likelihood of transmission based on the date of symptom onset in the index case. See the API documentation for more details.
+[^3]:
+     If you are a health authority with an EN solution in development or already deployed, please contact the developer relations partner assigned to you. If you have not yet been onboarded, please contact exposure_notifications@apple.com.
+[^4]:
+     The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention.
