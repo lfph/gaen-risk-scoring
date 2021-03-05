@@ -1,4 +1,4 @@
-# Configuring Exposure Notification Risk Scores
+# Configuring Exposure Notification Risk Scores for COVID-19
 
 
 ## Guidance from the Risk Score Symposium Invitational
@@ -8,16 +8,16 @@
 
 Exposure notifications are phone-based alerts that people can receive to inform them that they’ve been exposed to someone diagnosed with COVID-19. The Exposure Notification System (ENS) provided by Apple and Google has a configurable component, a risk score, which allows health authorities to specify which types or levels of exposures should trigger a notification.  
 
-In a series of meetings in November 2020, the Risk Score Symposium Invitational brought together specialists and experts from multiple disciplines who were actively involved in ENS implementation and/or research. The symposium’s purpose was to inform the decision-making process for health authorities who are using, or plan to use, ENS in their region.
+In a series of virtual meetings in November 2020, the Risk Score Symposium Invitational brought together specialists and experts from multiple disciplines who were actively involved in ENS implementation and/or research. The symposium’s purpose was to inform the decision-making process for health authorities who are using, or plan to use, ENS in their region.
 
-Below, we provide risk score parameter guidance based on currently available evidence. These recommendations are intended to be shared and open sourced, so the larger community can contribute to and improve upon these recommendations, especially as more data becomes available.
+Below, we provide risk score parameter guidance based on currently available evidence. These recommendations are intended to be shared and open sourced, so the larger community can contribute to and improve upon these recommendations, especially as more data become available.
 
 This guidance should be viewed as a starting point; each public health authority will need to make their own decisions tailored to the communities they are serving.
 
 
 # Structure of the risk score
 
-The risk score estimates, in minutes, the degree of relevant exposure to someone with a COVID-19 diagnosis. It is calculated by multiplying two[^1] weighted terms together: (1) duration at Bluetooth attenuation and (2) infectiousness based on days since symptom onset.  Further documentation on the structure of the risk score is available from [Apple](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration) and [Google](https://developers.google.com/android/exposure-notifications/meaningful-exposures) technical specification documents.
+The risk score estimates, in minutes, the degree of relevant exposure to someone with a COVID-19 diagnosis. It is calculated by multiplying two[^1] weighted terms together: (1) duration at Bluetooth attenuation and (2) infectiousness of the index patient based on days since symptom onset.  Further documentation on the structure of the risk score and how it is calculated (including a worked example) is available from [Apple](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration) and [Google](https://developers.google.com/android/exposure-notifications/meaningful-exposures) technical specification documents.
 
 ![Risk score overview](/img/risk-score-overview.png "Risk scores consist of attenuation, infectiousness weight, and (optionally) report type")
 
@@ -29,7 +29,7 @@ _Image source: [https://developer.apple.com/documentation/exposurenotification/e
 
 Bluetooth attenuations offer a very noisy signal of proximity, impacted by the device hardware, phone cases, environmental surroundings (obstacles and reflections), phone antenna orientation, placement in pockets/bags, how the device is held, and more.  
 
-Based on available data, the signal strength working group considered tradeoffs for capturing particular distance and duration scenarios.  The Signal Strength Working Group agreed on two consensus configuration options:
+Based on data from experiments evaluating several real-life scenarios in Switzerland, the United Kingdom, and Germany, the signal strength working group considered tradeoffs for capturing particular distance and duration scenarios.  The Signal Strength Working Group agreed on two consensus configuration options:
 
 
 
@@ -110,9 +110,9 @@ Based on available data, the signal strength working group considered tradeoffs 
 
 # Configuring infectiousness 
 
-Timing of exposure relative to symptom onset is [known to impact risk of COVID-19 transmission](https://www.medrxiv.org/content/10.1101/2020.09.04.20188516v2). 
+Timing of exposure relative to symptom onset is known to impact risk of COVID-19 transmission[^2][^3].  
 
-The recommendations below assume a known symptom onset date; no consensus was reached on how to treat cases with no symptom onset date.  For individuals who test positive without symptoms (or do not provide information on symptom onset), using the test date in place of symptom onset date is likely to overestimate transmission risk. Ignoring these individuals would likely underestimate transmission risk.
+The recommendations below assume a known symptom onset date; no consensus was reached on how to treat cases with no symptom onset date.  For individuals who test positive without symptoms (or do not provide information on symptom onset), using the test date in place of symptom onset date is likely to overestimate transmission risk. Ignoring these individuals would likely underestimate transmission risk. More targeted research to address the risk posed by asymptomatic individuals is needed. 
 
 Based on available data, the clinical/epidemiology working group agreed on two potential consensus configurations:
 
@@ -148,7 +148,7 @@ Based on available data, the clinical/epidemiology working group agreed on two p
    </td>
   </tr>
   <tr>
-   <td>Standard weight
+   <td>Standard weight[^4]
    </td>
    <td>30%
    </td>
@@ -156,7 +156,7 @@ Based on available data, the clinical/epidemiology working group agreed on two p
    </td>
   </tr>
   <tr>
-   <td>High weight
+   <td>High weight[^4]
    </td>
    <td>100%
    </td>
@@ -202,7 +202,7 @@ Details about the GAEN API and protocol description are at: [https://www.google.
 
 The DP3T white papers for the underlying exposure notification protocol are available at [https://github.com/DP-3T/documents/](https://github.com/DP-3T/documents/) 
 
-The [COVID Tuner risk score configuration tool](https://risk-score-tuner.appspot.com/) is freely available to health authorities.  Please contact Google developer relations for login information. 
+The [COVID Tuner risk score configuration tool](https://risk-score-tuner.appspot.com/) is freely available to health authorities.  Please contact Google developer relations for login information[^5]. 
 
 
 # Contributors
@@ -218,6 +218,8 @@ _Michael Flowers, New Jersey Office of Innovation_
 _Sameer Halai, WeHealth_
 
 _Bronwyn Harris, Apple_
+
+_Michael Judd, US Centers for Disease Control and Prevention[^6]_
 
 _Bryant Thomas Karras, Washington State Department of Health_
 
@@ -264,3 +266,13 @@ _Marc Zissman, MIT Lincoln Laboratory_
 
 [^1]:
      A third weighted term, the exposure report type, is also available but was not discussed during the symposium. Based on current best practices, we assumed only confirmed positive tests would be used.
+[^2]:
+     Ferretti, Luca, et al. "The timing of COVID-19 transmission." (2020). Pre-print. https://www.medrxiv.org/content/10.1101/2020.09.04.20188516v2
+[^3]:
+     Ferretti, Luca, et al. "Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing." _Science_ 368.6491 (2020). https://science.sciencemag.org/content/368/6491/eabb6936.abstract
+[^4]:
+     "Standard" and "high" categories refer to discrete categories of transmission risk that public health authorities can configure to differentiate encounters by the likelihood of transmission based on the date of symptom onset in the index case. See the API documentation for more details.
+[^5]:
+     If you are a health authority with an EN solution in development or already deployed, please contact the developer relations partner assigned to you. If you have not yet been onboarded, please contact exposure_notifications@apple.com.
+[^6]:
+     The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention. 
