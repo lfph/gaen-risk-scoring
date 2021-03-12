@@ -266,13 +266,18 @@ _Marc Zissman, MIT Lincoln Laboratory_
 
 [^1]:
      A third weighted term, the exposure report type, is also available but was not discussed during the symposium. Based on current best practices, we assumed only confirmed positive tests would be used.
+     
 [^2]:
      Ferretti, Luca, et al. "The timing of COVID-19 transmission." (2020). Pre-print. https://www.medrxiv.org/content/10.1101/2020.09.04.20188516v2
+
 [^3]:
      Ferretti, Luca, et al. "Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing." _Science_ 368.6491 (2020). https://science.sciencemag.org/content/368/6491/eabb6936.abstract
+
 [^4]:
      "Standard" and "high" categories refer to discrete categories of transmission risk that public health authorities can configure to differentiate encounters by the likelihood of transmission based on the date of symptom onset in the index case. See the API documentation for more details.
+
 [^5]:
      If you are a health authority with an EN solution in development or already deployed, please contact the developer relations partner assigned to you. If you have not yet been onboarded, please contact exposure_notifications@apple.com.
+
 [^6]:
      The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention. 
