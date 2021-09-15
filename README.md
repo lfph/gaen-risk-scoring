@@ -6,6 +6,8 @@ Please submit any changes via pull request (instructions here) or by emailing ri
 
 The guidelines created by the Risk Scoring Symposium Invitational working group can be found [here](/risk-scoring.md).
 
+To subscribe to get updates on progress and discussions around these settings, send a blank email to risk-scoring+subscribe@lists.lfph.io.
+
 ## How to update
 
 All changes must be made by pull release. When a PR is accepted, the change must be logged in the [changelog](/CHANGELOG.md). One of the project maintainers will update the version accordingly.
