@@ -6,13 +6,13 @@
   * [Structure of the risk score](#structure-of-the-risk-score)
   * [Thresholds and weights](#thresholds-and-weights)
     + [Background](#background)
-    + [Updated recommendations](#updated-recommendations)
+    + [Updated thresholds and weights recommendations](#updated-thresholds-and-weights-recommendations)
   * [Infectiousness curve](#infectiousness-curve)
+    + [Updated infectiousness curve recommendations](#updated-infectiousness-curve-recommendations)
   * [Tiered notifications](#tiered-notifications)
     + [Examples of tiered notification messaging](#examples-of-tiered-notification-messaging)
-    + [Examples of multiple classifications for analytics](#examples-of-multiple-classifications-for-analytics)
-    + [Messaging evaluation: a proposed path forward](#messaging-evaluation--a-proposed-path-forward)
-  * [Risk Score - updating over time](#risk-score---updating-over-time)
+    + [A proposed path forward for messaging evaluation](#a-proposed-path-forward-for-messaging-evaluation)
+  * [Risk Score updating over time](#risk-score-updating-over-time)
   * [Contributors](#contributors)
   * [Notes](#notes)
 
@@ -37,10 +37,9 @@ The risk score estimates, in minutes, the degree of relevant exposure to someone
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![Risk score overview](/img/risk-score-overview.png "Risk scores consist of attenuation, infectiousness weight, and (optionally) report type")
 
 
-![alt_text](images/image1.png "image_tooltip")
 [^2]
 
 
@@ -53,45 +52,106 @@ In November 2020, the Risk Score Consortium convened and recommended two sets of
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-_Table: Previous recommendations_
+<table>
+ <caption>Table: v1 threshold and weight recommendations</caption>
+  <tr>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+<strong>Immediate</strong>
+   </td>
+   <td><strong>Near</strong>
+   </td>
+   <td><strong>Medium</strong>
+   </td>
+   <td><strong>Other</strong>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" ><strong>Narrower Net 1.0</strong>
+   </td>
+   <td><em>Threshold</em>
+   </td>
+   <td>&lt;55 dB
+   </td>
+   <td>&lt;63 dB
+   </td>
+   <td>&lt;70 dB
+   </td>
+   <td>--
+   </td>
+  </tr>
+  <tr>
+   <td><em>Weight</em>
+   </td>
+   <td>150%
+   </td>
+   <td>100%
+   </td>
+   <td>40%
+   </td>
+   <td>0%
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" ><strong>Wider Net 1.0 </strong>
+   </td>
+   <td><em>Threshold</em>
+   </td>
+   <td>&lt;55 dB
+   </td>
+   <td>&lt;70 dB
+   </td>
+   <td>&lt;80 dB
+   </td>
+   <td>--
+   </td>
+  </tr>
+  <tr>
+   <td><em>Weight</em>
+   </td>
+   <td>200%
+   </td>
+   <td>100%
+   </td>
+   <td>25%
+   </td>
+   <td>0%
+   </td>
+  </tr>
+</table>
 
 Since that time, a variety of jurisdictions have implemented both sets of recommendations, as well as some in-between. Nearly a year later, we now have the benefit of measuring the efficacy outcomes for these two sets of recommendations. Generally speaking, the results for Narrow Net show substantially fewer exposure notifications going out - to the degree that we now regard it as too narrow for most circumstances and therefore less effective.
 
 
-### Updated recommendations
+### Updated thresholds and weights recommendations
 
 The evolution of the highly infectious Delta variant also suggests an adjustment to the Narrow Net recommendations is needed to keep pace with the changing characteristics of the virus. We propose to widen the recommended “narrow net” settings for thresholds and weights to a new set of parameters referred to as “Narrow Net v2”.  This corresponds with the updated transmission curve in the context of the Delta variant.  
 
 The proposed updated values for Threshold and Weight for Narrow Net v2 shown in the table below are at the mid-point between the former Narrow Net v1 and the existing Wide Net. We continue to recommend the Wide Net as a potential option for all jurisdictions. 
 
-**V2 Threshold and weight recommendations**
-
-
 <table>
+ <caption>Table: v2 threshold and weight recommendations</caption>
   <tr>
    <td>
    </td>
    <td>
    </td>
-   <td>Immediate
+   <td><strong>Immediate</strong>
    </td>
-   <td>Near
+   <td><strong>Near</strong>
    </td>
-   <td>Medium
+   <td><strong>Medium</strong>
    </td>
-   <td>Other
+   <td><strong>Other</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Narrow Net v2
+   <td rowspan="2" ><strong>Narrow Net v2</strong>
    </td>
-   <td>Threshold
+   <td><em>Threshold</em>
    </td>
    <td>≤55 dB
    </td>
@@ -103,7 +163,7 @@ The proposed updated values for Threshold and Weight for Narrow Net v2 shown in 
    </td>
   </tr>
   <tr>
-   <td>Weight
+   <td><em>Weight</em>
    </td>
    <td>175%
    </td>
@@ -115,9 +175,9 @@ The proposed updated values for Threshold and Weight for Narrow Net v2 shown in 
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Wide Net
+   <td rowspan="2" ><strong>Wide Net</strong>
    </td>
-   <td>Threshold
+   <td><em>Threshold</em>
    </td>
    <td>≤55 dB
    </td>
@@ -129,7 +189,7 @@ The proposed updated values for Threshold and Weight for Narrow Net v2 shown in 
    </td>
   </tr>
   <tr>
-   <td>Weight
+   <td><em>Weight</em>
    </td>
    <td>200%
    </td>
@@ -148,12 +208,59 @@ The proposed updated values for Threshold and Weight for Narrow Net v2 shown in 
 
 We recommend adjusting the infectiousness curve to reflect current knowledge about the Delta variant’s viral load ([source](https://www.medrxiv.org/content/10.1101/2021.09.28.21264260)) over time and the resultant change in infectiousness. As more variants of concern come into play we recommend re-visiting this infectiousness curve to reflect the latest research.
 
-Note that this leads to the same infectiousness curve no matter whether employing a narrow or wide net for the Thresholds and Weights.
-
-**Symptom onset map**
-
+For v1 this group recommended different symptom onset maps for each net.
 
 <table>
+ <caption>Table: v1 symptom onset map</caption>
+  <tr>
+   <td>
+   </td>
+   <td>
+<strong>Narrower net</strong>
+   </td>
+   <td><strong>Wider net</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Symptom Onset Map 
+   </td>
+   <td><em>None</em>: days -14 to -4; days +5 to +14
+<p>
+<em>Standard</em>: day -3; day +4
+<p>
+<em>High</em>: days -2 to +3
+   </td>
+   <td><em>None</em>: days -14 to -6; days +10 to +14 
+<p>
+<em>Standard</em>: -5 to -4 days; days +5 to +9 
+<p>
+<em>High</em>: days -3 to +4
+   </td>
+  </tr>
+  <tr>
+   <td>Standard weight[^4]
+   </td>
+   <td>30%
+   </td>
+   <td>60%
+   </td>
+  </tr>
+  <tr>
+   <td>High weight[^4]
+   </td>
+   <td>100%
+   </td>
+   <td>200%
+   </td>
+  </tr>
+</table>
+
+### Updated infectiousness curve recommendations
+
+For v2 this has been consolidated based on what we now know about the transmission of COVID-19. This leads to the same infectiousness curve no matter whether employing a narrow or wide net for the Thresholds and Weights.
+
+<table>
+ <caption>Table: v2 symptom onset map</caption>
   <tr>
    <td><strong>Day</strong>
    </td>
@@ -392,10 +499,8 @@ Current Health Authority guidance states that a close contact is someone who was
 
 Public health authorities may also find additional utility in using multiple classifications for expanded disease transmission analytics, while sending identical user-facing messaging. This allows PHAs to understand how many people receiving “alert” messages would be “close” to the advisory/alert threshold and how many might be more solidly in the “alert” category. The table below illustrates how they could send the same notification at different thresholds in order to collect this data. Configurations, including duration, can be adjusted to provide aggregated data regarding differences in exposure details. Although there are barriers and limitations in using aggregated data for evaluation work, this could potentially support analyses of the impact of exposure notifications to mitigate the spread of COVID-19. Exposure notification messaging can subsequently be kept the same across varying classifications to ensure continuity of messaging for users who meet baseline criteria. 
 
-### Examples of multiple classifications for analytics
-
-
 <table>
+ <caption>Table: Examples of multiple classifications for analytics</caption
   <tr>
    <td><strong>Classification</strong>
    </td>
@@ -461,14 +566,14 @@ Example messages from German Corona-Warn app:
 ![alt_text](images/image6.png "image_tooltip")
 [^8]
 
-### Messaging evaluation: a proposed path forward
+### A proposed path forward for messaging evaluation 
 
 Recent studies have been conducted or are currently underway examining the impact of public health and governmental communication strategies in the context of COVID-19 message framing and content. These evaluations have examined the impact of using gain-framed (attaining a desired outcome) vs. loss-framed (attaining an undesirable outcome) messages to encourage engagement in protective behaviors in self and others (such as hand washing, physical distancing, limiting activities outside of the household) and increasing awareness of risks. For example, Gantiva et al (2021)[^9] reported that gain-framed messages were more effective to motivate self-care behaviors (hand washing and staying home) while loss-framed messages were more effective at increasing awareness of risk of contagion. In studies of populations where risk perception is usually low, Dryhurst et al (2020)[^10] and Lohiniva et al (2020)[^11][[8]](https://stateofwa.sharepoint.com/sites/DOH-OutbreakandResponseCross-sectionalProjects/Shared%20Documents/WA%20Notify%20(EN)/Communications/Linux%20Foundation%20risk%20scoring%202.0/LFPH%20Tiered%20Notifications%20Language%20Draft%2010.13.21_reformatted.docx#_edn7) found that loss-framed messages were significantly correlated with reported adoption of self-care behaviors to mitigate COVID-19 contagion. Other COVID-19 messaging evaluations have reported: highlighting individuals' responsibilities to one another increased adopting protective behaviors[^12]; including suggestions on how to make self-isolation easier improved message effectiveness[^13]; and emphasizing consequences of non-compliance for the individual or family (vs. unknown others) were more effective in motivating compliance.[^14]
 
 However, evaluations to date have not focused on the framing or content of digital exposure notification messages smartphone users will receive nor on the message source which may influence the recipient's assessment of message authority or provenance. We propose developing a plan to test exposure notification message framing, source/authority, and content (such as, testing of minimal vs. denser messages, use of color, emoticons and/or images like stop lights) in a field study. In addition to testing with representative general population groups, diverse population groups would be included, such as: vulnerable populations; communities disproportionately impacted by COVID-19; populations known to perceive their risk as low; lower socio-economic status; etc. Evaluating users' actual responses to different message configurations will help inform how to frame an exposure notification so that the recipient is sufficiently motivated to click on the link in the message and access actionable public health information and recommendations around protective behaviors and getting tested. 
 
 
-## Risk Score - updating over time
+## Risk Score updating over time
 
 A deployment of Exposure Notifications, like other public health interventions, should involve monitoring key indicators to best drive program improvements. The epidemiology of COVID-19 is constantly changing over time and an ongoing practice monitoring and improving a deployment can drive continuous efficacy in the context of this ongoing change. Jurisdictions should continually monitor these metrics in order to improve upon their settings to maximize the number of accurate notifications sent, while attempting to also minimize false positives to the best of their ability.
 
@@ -494,31 +599,31 @@ This symposium reconvened in the context of new information about the epidemiolo
 
 We would like to recognize all participants in the Risk Score Symposium Invitational for their contributions (listed alphabetically):
 
-Eliah Aronoff-Spencer, CA Notify / UC San Diego 
+_Eliah Aronoff-Spencer, CA Notify / UC San Diego_
 
-Justus Benzler, Robert Koch Institute, Berlin, Germany
+_Justus Benzler, Robert Koch Institute, Berlin, Germany_
 
-Todd Burner, Google
+_Todd Burner, Google_
 
-Christophe Fraser, University of Oxford, UK
+_Christophe Fraser, University of Oxford, UK_
 
-Amanda Higgins, Washington State Department of Health 
+_Amanda Higgins, Washington State Department of Health_
 
-Andrea King, Washington State Department of Health
+_Andrea King, Washington State Department of Health_
 
-William B. Lober, University of Washington
+_William B. Lober, University of Washington_
 
-Randy Marsden, Apple
+_Randy Marsden, Apple_
 
-Debra Revere, University of Washington (WA Notify)
+_Debra Revere, University of Washington (WA Notify)_
 
-Curran Schiefelbein, MIT Lincoln Laboratory
+_Curran Schiefelbein, MIT Lincoln Laboratory_
 
-Jenny Wanger, Linux Foundation Public Health
+_Jenny Wanger, Linux Foundation Public Health_
 
-Gregory Zane, Washington State Department of Health 
+_Gregory Zane, Washington State Department of Health_
 
-Sam Zimmerman, Pathcheck
+_Sam Zimmerman, Pathcheck_
 
 
 ## Notes
