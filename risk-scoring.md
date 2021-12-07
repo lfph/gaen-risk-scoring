@@ -1,10 +1,7 @@
 # Configuring Exposure Notification Risk Scores for COVID-19
 
+## Guidance from the Risk Score Symposium Invitational
 
-## Guidance from the Risk Score Symposium Invitation
-
-- [Configuring Exposure Notification Risk Scores for COVID-19](#configuring-exposure-notification-risk-scores-for-covid-19)
-  * [Guidance from the Risk Score Symposium Invitation](#guidance-from-the-risk-score-symposium-invitation)
   * [Introduction](#introduction)
   * [Structure of the risk score](#structure-of-the-risk-score)
   * [Thresholds and weights](#thresholds-and-weights)
