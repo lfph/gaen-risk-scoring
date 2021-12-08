@@ -452,38 +452,26 @@ The exposure notification content should be designed to encourage users to take 
   <tr>
    <td>A person you were near within the last 14 days has tested positive for COVID-19.
 <ul>
-
 <li>Your exposure did not meet the current [Health authority] guidance for a close contact.
-
 <li>Continue to be safe with physical distancing, wearing a mask, and monitoring for symptoms.
+<li>If you have or develop COVID-19 symptoms, regardless of vaccination status, isolate yourself from others immediately and get tested.</li></ul>
+    <p>Click the link for further guidance.</p>
 
-<li>If you have or develop COVID-19 symptoms, regardless of vaccination status, isolate yourself from others immediately and get tested.
-
-<li>Click the link for further guidance.
-</li>
-</ul>
    </td>
-   <td>A person you were near within the last 14 days has tested positive for COVID-19.
-<p>
-If you are fully vaccinated:
+   
+   <td><p>A person you were near within the last 14 days has tested positive for COVID-19.</p>
+  <p>If you are fully vaccinated:</p>
 <ul>
-
-<li>Get tested 5-7 days after the date of your exposure.
-
-<li>Wear a mask indoors for 14 days after exposure. 
-
+ <li>Get tested 5-7 days after the date of your exposure.</li>
+ <li>Wear a mask indoors for 14 days after exposure. </li></ul>
 <p>
 If you are NOT fully vaccinated:
 <ul>
-
-<li>Isolate yourself from others and get tested as quickly as possible. 
-
-<li>If your test is negative, get tested again 5-7 days after the date of exposure. 
-
+ <li>Isolate yourself from others and get tested as quickly as possible. </li>
+ <li>If your test is negative, get tested again 5-7 days after the date of exposure. </li></ul>
+<p> If you have COVID-19 symptoms, regardless of vaccination status, isolate yourself from others immediately and get tested.</p>
 <p>
-If you have COVID-19 symptoms, regardless of vaccination status, isolate yourself from others immediately and get tested.
-<p>
-Click the link for further guidance.
+ Click the link for further guidance.</p>
 </li>
 </ul>
 </li>
