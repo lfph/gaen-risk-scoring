@@ -609,6 +609,8 @@ _Christophe Fraser, University of Oxford, UK_
 
 _Amanda Higgins, Washington State Department of Health_
 
+_Bryant Thomas Karras, Washington State Department of Health_
+
 _Andrea King, Washington State Department of Health_
 
 _William B. Lober, University of Washington_
