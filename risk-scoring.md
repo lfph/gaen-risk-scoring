@@ -278,28 +278,6 @@ For v2 this has been consolidated based on what we now know about the transmissi
    </td>
    <td><strong>-8</strong>
    </td>
-  </tr>
-  <tr>
-   <td>Infectiousness
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-   <td>N
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Day</strong>
-   </td>
    <td><strong>-7</strong>
    </td>
    <td><strong>-6</strong>
@@ -317,6 +295,20 @@ For v2 this has been consolidated based on what we now know about the transmissi
   </tr>
   <tr>
    <td>Infectiousness
+   </td>
+   <td>N
+   </td>
+   <td>N
+   </td>
+   <td>N
+   </td>
+   <td>N
+   </td>
+   <td>N
+   </td>
+   <td>N
+   </td>
+   <td>N
    </td>
    <td>N
    </td>
@@ -350,9 +342,22 @@ For v2 this has been consolidated based on what we now know about the transmissi
    </td>
    <td><strong>6</strong>
    </td>
-  </tr>
-  <tr>
-   <td>Infectiousness
+    <td><strong>7</strong>
+   </td>
+   <td><strong>8</strong>
+   </td>
+   <td><strong>9</strong>
+   </td>
+   <td><strong>10</strong>
+   </td>
+   <td><strong>11</strong>
+   </td>
+   <td><strong>12</strong>
+   </td>
+   <td><strong>13+</strong>
+   </td>
+   <tr>
+    <td>Infectiousness
    </td>
    <td>H
    </td>
@@ -367,28 +372,6 @@ For v2 this has been consolidated based on what we now know about the transmissi
    <td>S
    </td>
    <td>N
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Day</strong>
-   </td>
-   <td><strong>7</strong>
-   </td>
-   <td><strong>8</strong>
-   </td>
-   <td><strong>9</strong>
-   </td>
-   <td><strong>10</strong>
-   </td>
-   <td><strong>11</strong>
-   </td>
-   <td><strong>12</strong>
-   </td>
-   <td><strong>13+</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Infectiousness
    </td>
    <td>N
    </td>
