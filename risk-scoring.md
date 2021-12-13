@@ -1,4 +1,4 @@
-# Configuring Exposure Notification Risk Scores for COVID-19
+# Configuring Exposure Notification Risk Scores for COVID-19 v2.0
 
 ## Guidance from the Risk Score Symposium Invitational
 
